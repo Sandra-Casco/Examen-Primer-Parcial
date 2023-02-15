@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Supermercado_Inventario/1.0.0": {
+        "runtime": {
+          "Supermercado_Inventario.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Supermercado_Inventario/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
