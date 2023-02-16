@@ -78,8 +78,14 @@ namespace Supermercado_Inventario
             cliente.AgregarProducto(carne);
             cliente.MostrarCarritoCompras();
 
+            TarjetaCredito_Debito tarjeta = new TarjetaCredito_Debito();
+            tarjeta.NumeroTarjeta = "1234567890123456";
+            tarjeta.FechaExpiracion = new DateTime(2025, 12, 31);
+            cliente.Comprar(tarjeta);
 
-           
+            Efectivo efectivo = new Efectivo();
+            cliente.Comprar(efectivo);
+
             var caja = new Caja
             {
                 NumeroCaja = 1,

@@ -13,3 +13,18 @@ D:\DOCUMENTOS\U CEUTEC\PROGRAMACIÓN II\I PAC23\SEMANA 5\EXAMEN\Supermercado_Inv
 D:\DOCUMENTOS\U CEUTEC\PROGRAMACIÓN II\I PAC23\SEMANA 5\EXAMEN\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.pdb
 D:\DOCUMENTOS\U CEUTEC\PROGRAMACIÓN II\I PAC23\SEMANA 5\EXAMEN\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.genruntimeconfig.cache
 D:\DOCUMENTOS\U CEUTEC\PROGRAMACIÓN II\I PAC23\SEMANA 5\EXAMEN\Supermercado_Inventario\obj\Debug\net6.0\ref\Supermercado_Inventario.dll
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\bin\Debug\net6.0\Supermercado_Inventario.exe
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\bin\Debug\net6.0\Supermercado_Inventario.deps.json
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\bin\Debug\net6.0\Supermercado_Inventario.runtimeconfig.json
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\bin\Debug\net6.0\Supermercado_Inventario.dll
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\bin\Debug\net6.0\Supermercado_Inventario.pdb
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.csproj.AssemblyReference.cache
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.AssemblyInfoInputs.cache
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.AssemblyInfo.cs
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.csproj.CoreCompileInputs.cache
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.dll
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\refint\Supermercado_Inventario.dll
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.pdb
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\Supermercado_Inventario.genruntimeconfig.cache
+C:\Users\sandra.casco\Documents\GitHub\Examen-Primer-Parcial\Supermercado_Inventario\obj\Debug\net6.0\ref\Supermercado_Inventario.dll

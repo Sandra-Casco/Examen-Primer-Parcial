@@ -34,6 +34,13 @@ namespace Supermercado_Inventario
                 Console.WriteLine($"- {producto.Nombre}: {producto.Cantidad} unidades a {producto.Precio:C} cada una");
             }
         }
+        public void Comprar(MedioPago medioPago)
+        {
+            decimal montoTotal = ObtenerMontoTotal();
+            medioPago.RealizarPago(montoTotal);
+            CarritoCompras.Clear();
+            Console.WriteLine("Compra realizada con éxito.");
+        }
 
     }
 

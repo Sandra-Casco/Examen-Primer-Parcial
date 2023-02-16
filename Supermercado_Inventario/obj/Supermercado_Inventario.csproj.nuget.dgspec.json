@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOCUMENTOS\\U CEUTEC\\PROGRAMACIÓN II\\I PAC23\\SEMANA 5\\EXAMEN\\Supermercado_Inventario\\Supermercado_Inventario.csproj": {}
+    "C:\\Users\\sandra.casco\\Documents\\GitHub\\Examen-Primer-Parcial\\Supermercado_Inventario\\Supermercado_Inventario.csproj": {}
   },
   "projects": {
-    "D:\\DOCUMENTOS\\U CEUTEC\\PROGRAMACIÓN II\\I PAC23\\SEMANA 5\\EXAMEN\\Supermercado_Inventario\\Supermercado_Inventario.csproj": {
+    "C:\\Users\\sandra.casco\\Documents\\GitHub\\Examen-Primer-Parcial\\Supermercado_Inventario\\Supermercado_Inventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOCUMENTOS\\U CEUTEC\\PROGRAMACIÓN II\\I PAC23\\SEMANA 5\\EXAMEN\\Supermercado_Inventario\\Supermercado_Inventario.csproj",
+        "projectUniqueName": "C:\\Users\\sandra.casco\\Documents\\GitHub\\Examen-Primer-Parcial\\Supermercado_Inventario\\Supermercado_Inventario.csproj",
         "projectName": "Supermercado_Inventario",
-        "projectPath": "D:\\DOCUMENTOS\\U CEUTEC\\PROGRAMACIÓN II\\I PAC23\\SEMANA 5\\EXAMEN\\Supermercado_Inventario\\Supermercado_Inventario.csproj",
+        "projectPath": "C:\\Users\\sandra.casco\\Documents\\GitHub\\Examen-Primer-Parcial\\Supermercado_Inventario\\Supermercado_Inventario.csproj",
         "packagesPath": "C:\\Users\\sandra.casco\\.nuget\\packages\\",
-        "outputPath": "D:\\DOCUMENTOS\\U CEUTEC\\PROGRAMACIÓN II\\I PAC23\\SEMANA 5\\EXAMEN\\Supermercado_Inventario\\obj\\",
+        "outputPath": "C:\\Users\\sandra.casco\\Documents\\GitHub\\Examen-Primer-Parcial\\Supermercado_Inventario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
