@@ -1,14 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Supermercado_Inventario
+﻿public class ProductoLimpieza : ProductoNoPerecedero
 {
-    public class ProductoLimpieza : Producto
+    public string Marca { get; set; }
+
+    public ProductoLimpieza(int cantidad, double precio, string descripcion, string marca)
+        : base(cantidad, precio, descripcion)
     {
-        public DateTime FechaCaducidad { get; set; }
-        public string CodigoBarras { get; set; }
+        Marca = marca;
+    }
+
+    public override double CalcularTotal()
+    {
+        return base.CalcularTotal() * 1.1;
+    }
+
+    public override string ToString()
+    {
+        return $"{Cantidad} {Descripcion} (limpieza, marca {Marca})";
     }
 }

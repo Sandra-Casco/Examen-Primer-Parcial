@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Supermercado_Inventario
+﻿public class ProductoElectronico : ProductoNoPerecedero
 {
-    class ProductoElectronico : Producto
+    public int Garantia { get; set; }
+
+    public ProductoElectronico(int cantidad, double precio, string descripcion, int garantia) : base(cantidad, precio, descripcion)
     {
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
+        Garantia = garantia;
+    }
+
+    public override double CalcularTotal()
+    {
+        return base.CalcularTotal() * 1.1;
+    }
+
+    public override string ToString()
+    {
+        return $"{Cantidad} {Descripcion} (electrónico, garantía de {Garantia} años)";
     }
 }

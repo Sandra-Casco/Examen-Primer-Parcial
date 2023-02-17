@@ -1,110 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Supermercado_Inventario
+﻿
+public class Program
+{
     // Sandra Domitila Casco Reyes
     // Examen de la clase de Programación II, I parcial, semana 5
     // Ing. Fernando López
-{
-    class Program
+
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        ICajero cajero = new Cajero();
+        Cliente cliente = new Cliente();
+
+        IProducto manzanas = new ProductoNoPerecedero(10, 21.75, "Manzanas");
+        IProducto naranjas = new ProductoNoPerecedero(8, 9.35, "Naranjas");
+        IProducto celular = new ProductoElectronico(1, 5000.00, "Celular", 2);
+        IProducto leche = new Lacteo(2, 53.50, "Leche", new DateTime(2023, 02, 28), 123);
+        IProducto pollo = new Carne(1, 198.99, "Pollo", new DateTime(2023, 02, 20), 800);
+        IProducto harina = new Harina(1, 36.75, "Harina de trigo", new DateTime(2023, 12, 31), "Integral");
+        IProducto pastel = new Pastel(1, 450.00, "Pastel de chocolate", new DateTime(2023, 02, 17), 3);
+        IProducto cloro = new ProductoLimpieza(1, 5.50, "Cloro", "Cloralex");
+        IProducto camisa = new Ropa(1, 300.00, "Camisa", "M");
+        IProducto desodorante = new Desodorante(1, 189.0, "Desodorante", "Fresh");
+
+        cliente.AgregarProducto(manzanas);
+        cliente.AgregarProducto(naranjas);
+        cliente.AgregarProducto(celular);
+        cliente.AgregarProducto(leche);
+        cliente.AgregarProducto(pollo);
+        cliente.AgregarProducto(harina);
+        cliente.AgregarProducto(pastel);
+        cliente.AgregarProducto(cloro);
+        cliente.AgregarProducto(camisa);
+        cliente.AgregarProducto(desodorante);
+
+        cliente.RealizarCompra(cajero);
+
+        Console.WriteLine("Productos comprados:");
+        foreach (IProducto producto in cliente.Carrito)
         {
-            
-            var leche = new ProductoAlimenticio
-            {
-                Nombre = "Leche",
-                Descripcion = "Leche descremada",
-                Precio = 20.0m,
-                Cantidad = 10,
-                FechaCaducidad = new DateTime(2023, 12, 31),
-                CodigoBarras = "1432567890"
-            };
-
-            var mantequilla = new ProductoAlimenticio
-            {
-                Nombre = "Mantequilla Sula",
-                Descripcion = "Mantequilla descremada",
-                Precio = 40.0m,
-                Cantidad = 5,
-                FechaCaducidad = new DateTime(2023, 10, 30),
-                CodigoBarras = "1234567890"
-            };
-
-            var azistin = new ProductoLimpieza
-            {
-                Nombre = "Azistin Suli",
-                Descripcion = "Olor a Lavanda",
-                Precio = 70.0m,
-                Cantidad = 15,
-                FechaCaducidad = new DateTime(2024, 10, 30),
-                CodigoBarras = "1345672890"
-            };
-
-            var carne = new ProductoCarne
-            {
-                Nombre = "Carne Molida",
-                Descripcion = "Carne de res molida Premium",
-                Precio = 170.0m,
-                Cantidad = 8,
-                FechaCaducidad = new DateTime(2024, 10, 30),
-                CodigoBarras = "1395672840"
-            };
-
-            var televisor = new ProductoElectronico
-            {
-                Nombre = "Televisor",
-                Descripcion = "Televisor LED 4K",
-                Precio = 500.0m,
-                Cantidad = 5,
-                Marca = "Samsung",
-                Modelo = "UE55RU7105"
-            };
-
-            
-            var cliente = new Cliente
-            {
-                Nombre = "Sandra Casco",
-                Direccion = "Colonia Monterrey",
-                CarritoCompras = new List<Producto>()
-            };
-
-            
-            cliente.AgregarProducto(leche);
-            cliente.AgregarProducto(televisor);
-            cliente.AgregarProducto(mantequilla);
-            cliente.AgregarProducto(azistin);
-            cliente.AgregarProducto(carne);
-            cliente.MostrarCarritoCompras();
-
-            TarjetaCredito_Debito tarjeta = new TarjetaCredito_Debito();
-            tarjeta.NumeroTarjeta = "1234567890123456";
-            tarjeta.FechaExpiracion = new DateTime(2025, 12, 31);
-            cliente.Comprar(tarjeta);
-
-            Efectivo efectivo = new Efectivo();
-            cliente.Comprar(efectivo);
-
-            var caja = new Caja
-            {
-                NumeroCaja = 1,
-                MontoTotal = cliente.ObtenerMontoTotal()
-            };
-
-            
-            var ipago = new PagoConTarjeta
-            {
-                NumeroTarjeta = "1234567890123456",
-                FechaExpiracion = new DateTime(2025, 12, 31)
-            };
-
-            cliente.RealizarPago(ipago, caja);
-
-            Console.WriteLine($"El monto total a pagar es: {caja.MontoTotal:C}"); 
-            Console.WriteLine($"El pago con tarjeta fue exitoso Sr. {cliente.Nombre}");
-            Console.WriteLine($"El saldo actual en la caja {caja.NumeroCaja} es: {caja.MontoTotal:C}");
+            Console.WriteLine(producto.ToString());
         }
+
+        Console.WriteLine($"El total de ventas es L. {cajero.TotalVentas}");
     }
+
 
 }
